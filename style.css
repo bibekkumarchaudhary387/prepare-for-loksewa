@@ -103,7 +103,7 @@ button.wrong {
   }
 
   #show-answer {
-    position: fixed;
+    position: absolute;
     bottom: 15px;
     right: 15px;
     padding: 10px 14px;

@@ -1,4 +1,4 @@
-const questions = [
+const Questions = [
   {
     question: "What is the capital of Nepal?",
     options: ["Pokhara", "Kathmandu", "Biratnagar", "Lalitpur"],

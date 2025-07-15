@@ -5,13 +5,18 @@ let shuffledQuestions = [];
 let userAnswers = [];
 
 window.onload = () => {
-  shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
-  userAnswers = new Array(questions.length).fill(null); 
+  shuffledQuestions = [...Questions].sort(() => Math.random() - 0.5);
+  userAnswers = new Array(Questions.length).fill(null); 
   showQuestion();
 };
 
 function showQuestion() {
+  document.getElementById("question-number").innerText = `Question ${currentIndex + 1} of ${shuffledQuestions.length}`;
+
   const container = document.getElementById("quiz-container");
+    container.classList.remove("fade-in"); // remove previous animation
+  void container.offsetWidth; // trigger reflow
+  container.classList.add("fade-in"); // apply animation again
   const currentQuestion = shuffledQuestions[currentIndex];
 
   document.getElementById("score").innerText = `You scored ${score}/${shuffledQuestions.length}`;
@@ -73,10 +78,12 @@ function showFinalScore() {
   else grade = "😢 Needs Improvement";
 
   container.innerHTML = `
+  <div class="quiz-complete">
     <h2>🎓 Quiz Complete!</h2>
     <p>You scored ${score}/${shuffledQuestions.length}</p>
     <p>Grade: <strong>${grade}</strong></p>
     <button onclick="location.reload()">Restart Quiz</button>
+    </div>
   `;
 
   document.getElementById("show-answer").style.display = "none";

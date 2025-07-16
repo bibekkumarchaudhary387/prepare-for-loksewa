@@ -149,6 +149,55 @@ button.wrong {
   background-color: #0b7dda;
 }
 
+/*choose language*/
+.choose-lang {
+  text-align: center;
+  font-size: 35px;
+}
+.choose-lang-btn {
+    display: flex;
+
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.choose-lang-btn a {
+  text-decoration:none;
+  margin: 10px;
+}
+
+.c-btn {
+  display: flex;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    align-items: center;     
+    justify-content: center; 
+}
+
+.c-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Specific positioning if needed */
+.left-btn {
+    align-self: flex-start;
+}
+
+.right-btn {
+    align-self: flex-end;
+    font-weight: 600;
+}
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
@@ -180,6 +229,11 @@ button.wrong {
 .fade-in {
   animation: fadeIn 0.4s ease-in-out;
 }
+@media (max-width: 340px) {
+  .choose-lang-btn {
+    display: inline;
+  }
+}
 
 @keyframes fadeIn {
   from {
@@ -191,4 +245,5 @@ button.wrong {
     transform: translateY(0);
   }
 }
+
 

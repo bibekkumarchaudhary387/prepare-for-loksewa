@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz English</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Time</h1>
+    <p id="question-number"></p>
+    <div id="score">You scored 0/0</div>
+    <div id="quiz-container">
+      <!-- Question will be injected here -->
+    </div>
+    <button id="show-answer">Show Answer</button>
+  </div>
+
+  <div id="explanation-popup" class="popup hidden">
+    <div class="showpop">
+  <div class="popup-content">
+    <p id="popup-title"></p>
+    <p id="popup-explanation"></p>
+    <a id="popup-link" href="#" target="_blank">📖 Read Full Blog</a>
+    <button id="popup-next">Next</button>
+  </div>
+  </div>
+</div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

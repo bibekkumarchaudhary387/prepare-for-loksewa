@@ -4,18 +4,31 @@ let answered = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
 
+// pre loader
+ document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500); // Let the opacity fade out
+    });
+  });
+  
 window.onload = () => {
   shuffledQuestions = [...Questions].sort(() => Math.random() - 0.5);
-  userAnswers = new Array(Questions.length).fill(null); 
+  userAnswers = new Array(Questions.length).fill(null);
   showQuestion();
 };
+
 function showQuestion() {
   document.getElementById("question-number").innerText = `Question ${currentIndex + 1} of ${shuffledQuestions.length}`;
 
   const container = document.getElementById("quiz-container");
-    container.classList.remove("fade-in"); // remove previous animation
-  void container.offsetWidth; // trigger reflow
-  container.classList.add("fade-in"); // apply animation again
+  container.classList.remove("fade-in");
+  void container.offsetWidth;
+  container.classList.add("fade-in");
+
   const currentQuestion = shuffledQuestions[currentIndex];
 
   document.getElementById("score").innerText = `You scored ${score}/${shuffledQuestions.length}`;
@@ -34,6 +47,12 @@ function showQuestion() {
     </div>
   `;
   container.innerHTML = html;
+
+  // Reset the "Show Answer" button
+  const showBtn = document.getElementById("show-answer");
+  showBtn.innerText = "Show Answer";
+  showBtn.onclick = handleShowAnswerClick;
+  showBtn.disabled = false;
 }
 
 function selectAnswer(selectedIndex, btn) {
@@ -41,7 +60,6 @@ function selectAnswer(selectedIndex, btn) {
   const buttons = document.querySelectorAll(".options button");
   buttons.forEach(b => b.disabled = true);
 
-  // Mark selected/correct/wrong
   if (selectedIndex === correctIndex) {
     btn.classList.add("correct");
     score++;
@@ -50,22 +68,40 @@ function selectAnswer(selectedIndex, btn) {
     buttons[correctIndex].classList.add("correct");
   }
 
-  // Show explanation popup
   showPopup(selectedIndex === correctIndex, correctIndex);
-
   answered++;
+
+  // Convert "Show Answer" to "Next"
+  const showBtn = document.getElementById("show-answer");
+  showBtn.innerText = "Next";
+  showBtn.onclick = () => {
+    const popup = document.querySelector(".popup-box");
+    if (popup) popup.remove();
+    currentIndex++;
+    showQuestion();
+  };
 }
 
-document.getElementById("show-answer").addEventListener("click", () => {
+function handleShowAnswerClick() {
   const correctIndex = shuffledQuestions[currentIndex].answer;
   const buttons = document.querySelectorAll(".options button");
   buttons.forEach((btn, index) => {
     btn.disabled = true;
     if (index === correctIndex) btn.classList.add("correct");
   });
-  currentIndex++;
-  setTimeout(showQuestion, 1500);
-});
+
+  showPopup(true, correctIndex); // Always show correct explanation
+
+  // Convert "Show Answer" to "Next"
+  const showBtn = document.getElementById("show-answer");
+  showBtn.innerText = "Next";
+  showBtn.onclick = () => {
+    const popup = document.querySelector(".popup-box");
+    if (popup) popup.remove();
+    currentIndex++;
+    showQuestion();
+  };
+}
 
 function showFinalScore() {
   const container = document.getElementById("quiz-container");
@@ -78,11 +114,11 @@ function showFinalScore() {
   else grade = "😢 Needs Improvement";
 
   container.innerHTML = `
-  <div class="quiz-complete">
-    <h2>🎓 Quiz Complete!</h2>
-    <p>You scored ${score}/${shuffledQuestions.length}</p>
-    <p>Grade: <strong>${grade}</strong></p>
-    <button onclick="location.reload()">Restart Quiz</button>
+    <div class="quiz-complete">
+      <h2>🎓 Quiz Complete!</h2>
+      <p>You scored ${score}/${shuffledQuestions.length}</p>
+      <p>Grade: <strong>${grade}</strong></p>
+      <button onclick="location.reload()">Restart Quiz</button>
     </div>
   `;
 
@@ -101,19 +137,10 @@ function showPopup(isCorrect, correctIndex) {
       ${!isCorrect ? `<p><strong>Correct Answer:</strong> ${questionData.options[correctIndex]}</p>` : ""}
       <p>${questionData.explanation || "No explanation available."}</p>
       <div class="pop-btn">
-      <a href="${questionData.blogLink || '#'}" target="_blank" id="itemblog">Read full explanation 📖</a>
-      <button id="next-btn">Next</button>
-      </div>
+        <a href="${questionData.blogLink || '#'}" target="_blank" id="itemblog">Read full explanation 📖</a>
       </div>
     </div>
   `;
 
   document.body.appendChild(popup);
-
-  document.getElementById("next-btn").onclick = () => {
-    popup.remove();
-    currentIndex++;
-    showQuestion();
-  };
 }
-

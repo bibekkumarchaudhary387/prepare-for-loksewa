@@ -154,7 +154,7 @@ const Questions = [
   blogLink: "https://yourblog.com/grammar-neither-nor-agreement"
 },
 {
-  question: "Choose the correct alternative which improves the sentence:<br>I wish <u>you couldn't arrive so late all the time</ul>.",
+  question: "Choose the correct alternative which improves the sentence:<br>I wish <u>you couldn't arrive so late all the time</u>.",
   options: [
     "you wouldn't arrive so late all the time",
     "you should have arrive so late all the time",

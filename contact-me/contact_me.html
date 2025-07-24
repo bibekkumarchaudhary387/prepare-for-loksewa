@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact_me.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+        <div id="preloader">
+    <div class="loader"></div>
+    <p style="color: white; font-family: sans-serif; margin-top: 20px;">Loading Quiz...</p>
+  </div>
+  <div class="container">
+    <h1>Quiz Time</h1>
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form" action="https://formspree.io/f/mgvzabya" method="POST">
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send</button>
+</form>
+<div class="form-status hidden" id="form-status">
+  <div class="spinner"></div>
+  <p class="status-message" id="status-message"></p>
+</div>
+
+
+  <div class="social-links">
+    <a href="https://facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@yourprofile" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://wa.me/9779704527011" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+</div>
+<script>
+  const form = document.querySelector('.contact-form');
+  const statusContainer = document.getElementById('form-status');
+  const statusMessage = document.getElementById('status-message');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusContainer.classList.remove('hidden');
+    statusContainer.classList.remove('error', 'success');
+    statusMessage.textContent = "Sending...";
+    
+    const data = new FormData(form);
+    const action = form.getAttribute('action');
+
+    fetch(action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        statusMessage.textContent = "✅ Message sent successfully!";
+        statusContainer.classList.add('success', 'fade-in');
+        setTimeout(() => {
+          statusContainer.classList.add('hidden');
+        }, 3000);
+      } else {
+        throw new Error("Server error");
+      }
+    }).catch(error => {
+      statusMessage.textContent = "❌ Failed to send. Try again.";
+      statusContainer.classList.add('error', 'fade-in');
+    });
+  });
+</script>
+<script src="/script.js"></script>
+</body>
+</html>

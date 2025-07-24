@@ -4,6 +4,17 @@ let answered = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
 
+// preloader
+  document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500); // Let the opacity fade out
+    });
+  });
+
 window.onload = () => {
   shuffledQuestions = [...Questions].sort(() => Math.random() - 0.5);
   userAnswers = new Array(Questions.length).fill(null); 

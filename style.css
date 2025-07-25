@@ -1,4 +1,5 @@
 
+/* UNIVERSAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +17,7 @@ body {
   padding: 20px;
 }
 
+/* FULL BOX */
 .container {
   max-width: 700px;
   width: 100%;
@@ -29,12 +31,14 @@ body {
     min-height: 300px;  /* Set this as needed */
 }
 
+/* MAIN TITLE */
 h1 {
   font-size: 34px;
   color: #00d9ff;
   margin-bottom: 20px;
 }
 
+/* BUTTON */
 .choose-lang-btn {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +49,9 @@ h1 {
 .choose-lang-btn a {
   text-decoration: none;
 }
-
+.quiz-btn {
+  text-decoration: none;
+}
 .c-btn {
   background-color: #007bff;
   display: flex;
@@ -304,7 +310,22 @@ font-size:15px;
   background-color: #28a745; /* Green */
   color: #fff;
   border: 2px solid #1e7e34;
-  pointer-events: none; /* Disable clicking */
-  cursor: default;
+  display: flex;
+  color: white;
+  height: 90px;
+  padding: 16px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
   transition: 0.3s ease;
+  min-width: 130px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  align-items: center;     
+  justify-content: center; 
+}
+.completed:hover {
+  background-color: #1f8536;
+  transform: scale(1.05);
 }

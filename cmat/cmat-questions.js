@@ -198,7 +198,7 @@ const Questions = [
 },
 { question: "If x + 5 = 7, then 3x + 1 = ?", 
   options: ["5", "7", "4", "9"], 
-  answer: 0, 
+  answer: 1, 
   explanation: "From x + 5 = 7, we get x = 2. Substituting x = 2 into 3x + 1 gives 3(2) + 1 = 6 + 1 = 7. So the correct answer is 7.", 
   blogLink: "https://yourblog.com/solving-linear-equations"
  },
@@ -213,7 +213,7 @@ const Questions = [
   question: "40% of 4 is . . .",
   options: ["2", "0.016", "0.16", "1.6"],
   answer: 3,
-  explanation: "40% means 40/100, so 40% of 4 = (40/100) × 4 = 1.6.",
+  explanation: "40% means 40/100,<br> so 40% of 4 = (40/100) × 4 = 1.6.",
   blogLink: "https://yourblog.com/percentage-calculations"
 },
 {
@@ -269,7 +269,7 @@ const Questions = [
   question: "The number of 3-digit numbers divisible by 6 is . . .",
   options: ["150", "166", "149", "167"],
   answer: 0,
-  explanation: "Smallest 3-digit multiple of 6 is 102 (6×17), largest is 996 (6×166). Number of terms = 166 - 17 + 1 = 150.",
+  explanation: "Smallest 3-digit multiple of 6 is 102 (6×17),<br> largest is 996 (6×166). <br>Number of terms = 166 - 17 + 1 = 150.",
   blogLink: "https://yourblog.com/divisibility-and-counting"
 },
 {

@@ -259,9 +259,6 @@ font-size:15px;
     padding: 12px 24px;
     min-width: 100px;
   }
-  .popup-content {
-    margin-top: -280px;
-  }
 }
 
 @keyframes fadeIn {

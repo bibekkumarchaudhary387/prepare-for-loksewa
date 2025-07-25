@@ -64,7 +64,7 @@ function selectAnswer(selectedIndex, btn) {
     btn.classList.add("correct");
     score++;
     //vibrate control
-     if (navigator.vibrate) navigator.vibrate(50);
+     if (navigator.vibrate) navigator.vibrate(10);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");

@@ -299,3 +299,12 @@ font-size:15px;
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+/*data*/
+.completed {
+  background-color: #28a745; /* Green */
+  color: #fff;
+  border: 2px solid #1e7e34;
+  pointer-events: none; /* Disable clicking */
+  cursor: default;
+  transition: 0.3s ease;
+}

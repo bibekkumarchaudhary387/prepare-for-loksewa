@@ -59,7 +59,7 @@ function selectAnswer(selectedIndex, btn) {
     score++;
 
     //vibrate control
-     if (navigator.vibrate) navigator.vibrate(50);
+     if (navigator.vibrate) navigator.vibrate(10);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");
@@ -98,9 +98,19 @@ function showFinalScore() {
     <h2>🎓 Quiz Complete!</h2>
     <p>You scored ${score}/${shuffledQuestions.length}</p>
     <p>Grade: <strong>${grade}</strong></p>
-    <button onclick="location.reload()">Restart Quiz</button>
+    <button onclick="window.location.href='../set.html'">Menu</button>
     </div>
   `;
 
   document.getElementById("show-answer").style.display = "none";
+}
+
+//user data
+if (score === shuffledQuestions.length) {
+  // Store full completion for relevant set
+  // For English quiz
+  localStorage.setItem("SetACompleted", "true");
+
+  // For Nepali quiz (use this only in nepaliquiz.html)
+ // localStorage.setItem("SetBCompleted", "true");
 }

@@ -63,12 +63,13 @@ function selectAnswer(selectedIndex, btn) {
   if (selectedIndex === correctIndex) {
     btn.classList.add("correct");
     score++;
-     if (navigator.vibrate) navigator.vibrate(100);
+    //vibrate control
+     if (navigator.vibrate) navigator.vibrate(50);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");
-
-        buttons[correctIndex].classList.add("correct");
+     // Medium vibration for wrong answer (e.g., 150ms)
+    if (navigator.vibrate) navigator.vibrate([50, 25, 100]);
   }
 
   showPopup(selectedIndex === correctIndex, correctIndex);

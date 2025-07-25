@@ -248,20 +248,5 @@ const Questions = [
   question: "The Pashupatinath Temple is dedicated to which deity?",
   options: ["Vishnu","Ram","Shiva","Brahma"],
   answer: 2
-},
-{
-  question: "The first ever Prime Minister of Nepal was?",
-  options: ["Ram Baran Yadav","Bhimsen Thapa","Jung Bahadur Rama","Mathabar Singh Thapa"],
-  answer: 1
-},
-{
-  question: "When did the People’s Movement I (Jana Andolan I) occur?",
-  options: ["2041 BS","2046 BS","2063 BS","2072 BS"],
-  answer: 1
-},
-{
-  question: "Which year did Nepal become a federal democratic republic?",
-  options: ["2064 BS","2065 BS","2072 BS","2063 BS"],
-  answer: 0
-},
+}
 ]

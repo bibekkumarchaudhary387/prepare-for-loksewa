@@ -59,12 +59,12 @@ function selectAnswer(selectedIndex, btn) {
     score++;
 
     //vibrate control
-     if (navigator.vibrate) navigator.vibrate(100);
+     if (navigator.vibrate) navigator.vibrate(50);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");
-     // Medium vibration for wrong answer (e.g., 300ms)
-    if (navigator.vibrate) navigator.vibrate([100, 50, 200]);
+     // Medium vibration for wrong answer (e.g., 150ms)
+    if (navigator.vibrate) navigator.vibrate([50, 25, 100]);
   }
 
   answered++;

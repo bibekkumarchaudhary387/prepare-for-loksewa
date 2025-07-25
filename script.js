@@ -57,9 +57,14 @@ function selectAnswer(selectedIndex, btn) {
   if (selectedIndex === correctIndex) {
     btn.classList.add("correct");
     score++;
+
+    //vibrate control
+     if (navigator.vibrate) navigator.vibrate(100);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");
+     // Medium vibration for wrong answer (e.g., 300ms)
+    if (navigator.vibrate) navigator.vibrate([100, 50, 200]);
   }
 
   answered++;

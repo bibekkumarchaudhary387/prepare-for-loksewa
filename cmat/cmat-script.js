@@ -63,9 +63,12 @@ function selectAnswer(selectedIndex, btn) {
   if (selectedIndex === correctIndex) {
     btn.classList.add("correct");
     score++;
+     if (navigator.vibrate) navigator.vibrate(100);
   } else {
     btn.classList.add("wrong");
     buttons[correctIndex].classList.add("correct");
+
+        buttons[correctIndex].classList.add("correct");
   }
 
   showPopup(selectedIndex === correctIndex, correctIndex);

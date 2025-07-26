@@ -30,7 +30,7 @@ function showQuestion() {
   container.classList.add("fade-in"); // apply animation again
   const currentQuestion = shuffledQuestions[currentIndex];
 
-  document.getElementById("score").innerText = `You scored ${score}/${shuffledQuestions.length}`;
+  document.getElementById("score").innerText = `Your score ${score}`;
 
   if (!currentQuestion) {
     showFinalScore();

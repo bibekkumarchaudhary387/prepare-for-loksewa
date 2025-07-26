@@ -206,6 +206,16 @@ button.wrong {
 }
 
 /*popup*/
+.pop-btn {
+  text-decoration: underline;
+  background-color: #007bff;
+border-radius: 10px;
+  transition: font-size 0.3s ease;
+}
+.pop-btn:hover {
+  font-size: 18px;
+  color: #0056b3;
+}
 .popup-content {
   position:relative;
   border-radius: 20px;

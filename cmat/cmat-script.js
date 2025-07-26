@@ -139,9 +139,8 @@ function showPopup(isCorrect, correctIndex) {
     <div class="popup-content">
       <h2 class="popup-title">${isCorrect ? "✅ Correct!" : "❌ Wrong Answer"}</h2>
       ${!isCorrect ? `<p><strong>Correct Answer:</strong> ${questionData.options[correctIndex]}</p>` : ""}
-      <p>${questionData.explanation || "No explanation available."}</p>
       <div class="pop-btn">
-        <a href="${questionData.blogLink || '#'}" target="_blank" id="itemblog">Read full explanation 📖</a>
+        <a href="${questionData.blogLink || '#'}" target="_blank" id="itemblog">Read Explanation</a>
       </div>
     </div>
   `;

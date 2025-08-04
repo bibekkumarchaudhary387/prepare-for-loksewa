@@ -650,5 +650,178 @@ blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-73"
   options: ["Dr. Damber Nepali","Dr. Dineshraj Bhuju","Dr. Mahabir Poon","Dr. Ajaya Shah"],
   answer: 2,
   blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-76"
+},
+//77
+{
+  question: "In how many parts and articles the constituiton of Nepal 2072 is divided into",
+  options: ["30 parts, 300 articles","33 parts, 301 articles","34 parts, 304 articles","35 parts, 308 articles"],
+  answer: 3,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-77"
+},
+//78
+{
+  question: "Who is the present Chairperson of Confederation of Nepalese Industries (CNI)?",
+  options: ["Binod Chaudhary","Chandra Prasad Dhakal","Birendra Raj Pandey","Rajesh Shakya"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-78"
+},
+//79
+{
+  question: "Which is the first Nepali language film and when was it released?",
+  options: ["Satyabhamaa, 1950","Satya Harischandra, 1951","Aama, 1964","Maitighar, 1966"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-79"
+},
+//80
+{
+  question: "Which valley in Nepal is situated at the highest altitude?",
+  options: ["Pokhara","Arun","Barun","Khaptad"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-80"
+},
+//81
+{
+  question: "In which of the following date, day and night are equal?",
+  options: ["April 21","June 30","August 31","September 23"],
+  answer: 3,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-81"
+},
+//82
+{
+  question: "Stainless Steels which are resistant to corrosion and oxidation typically needs",
+  options: ["Copper","Silver","Chromium","zinc"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-82"
+},
+//83
+{
+  question: "When was Nepal declared a Federal Democratic Republic by the newly elected constituiton Assembly?",
+  options: ["May 28, 2008","August 29, 2008","June 30, 2009","July 31, 2009"],
+  answer: 0,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-83"
+},
+//84
+{
+  question: "'Education is the most powerful weapon which you can use to change the world', Whose quotation is this?",
+  options: ["Mahatma Gandhi","Nelson Mandela","B.P. Koirala","Barak Obama"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-84"
+},
+//85
+{
+  question: "Chat GPT is popular and wide in use at different fronts, what stands for GPT?",
+  options: [
+    "Generation of Predetermined Task",
+    "General Programming Technique",
+    "Generalized Plans and Technique",
+    "Generative Pretrained Transformer"
+  ],
+  answer: 3,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-85"
+},
+//86
+{
+  question: "Which of the following Asian country was never ever colonized?",
+  options: ["India","Burma","Thailand","Sri Lanka"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-86"
+},
+//87
+{
+  question: "'Gaijatra' festival was introduced in Nepal by",
+  options: ["Pratab Malla","Ranjeet Malla","Bhupatindra Malla","Ratna Malla"],
+  answer: 0,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-87"
+},
+//88
+{
+  question: "Pokhara International Airport experienced its first international flight with the flight of:",
+  options: ["Druk Air","Sichuan Airlines","InDigo","Aljajeera"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-88"
+},
+//89
+{
+  question: "'Move n' Pick' brand ice cream recently introduced in Nepal is associated to which country?",
+  options: ["India","Nepal","The Netherland","Switzerland"],
+  answer: 3,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-89"
+},
+//90
+{
+  question: "'Badimalika' a popular holy shrine of Nepal is located in the district of",
+  options: ["Dailekh","Mugu","Bajura","Rukum West"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-90"
+},
+//91
+{
+  question: "The currency of Bhutan is",
+  options: ["Ngultrum","Rupees","Taka","Lek"],
+  answer: 0,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-91"
+},
+//92
+{
+  question: "What is Nepal's biggest import item?",
+  options: ["Pharmaceuticals","Oil","Gold","Vehicles"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-92"
+},
+//93
+{
+  question: "Out of the total government budget of Nepal for the fiscal year 2080/81, what is the ratio of current expenditure and capital expenditure?",
+  options: ["60.5 and 20.2","62.7 and 21.5","65.2 and 17.25","50.8 and 18.75"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-93"
+},
+//94
+{
+  question: "Which is the youngest university in Nepal?",
+  options: ["Rajarshi Janak University","Far Western University","Madhesh University","Lumbini Buddhist University"],
+  answer: 0,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-94"
+},
+//95
+{
+  question: "What is the name given to space shuttle launched by India on September 02, 2023 to make a study of Sun?",
+  options: ["Saurya L1","Dewakar L1","Bhaskar L1","Aditya L1"],
+  answer: 3,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-95"
+},
+//96
+{
+  question: "What is the name of India’s third lunar mission which successfully landed on the Moon's south pole in 2023?",
+  options: ["Mangalyaan-3","Chandrayaan-3","Vikram-3","Suryayaan-3"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-96"
+},
+//97
+{
+  question: "Which Nepali female cricketer recently became the first to take a hat-trick in T20 International matches?",
+  options: ["Rubina Chhetry","Sita Rana Magar","Indu Barma","Kabita Kunwar"],
+  answer: 0,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-97"
+},
+//98
+{
+  question: "Which country hosted the G20 Summit in 2023?",
+  options: ["Indonesia","Brazil","India","South Africa"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-98"
+},
+//99
+{
+  question: "Which Nepali movie was selected as Nepal’s official entry for the Oscars 2024?",
+  options: ["The Red Suitcase","Bulaki","Ainaa Jhyal Ko Putali","Prakash"],
+  answer: 2,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-99"
+},
+//100
+{
+  question: "What is the name of the bridge connecting India and Nepal inaugurated in 2023 to improve cross-border connectivity?",
+  options: ["Mechi Bridge","Mahakali Bridge","Motihari-Amlekhgunj Bridge","jogbani-Biratnagar Integrated Check Post Bridge"],
+  answer: 1,
+  blogLink: "../blogs/cmat/blog_set_a.html#cmat-set-a-100"
 }
 ];

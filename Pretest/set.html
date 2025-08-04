@@ -24,13 +24,20 @@
   </ul>
 </nav>
     <!-- 🔼 Nav Section End -->
-    
+     <div class="set-container">
+    <!--SET A-->
         <a href="SET_A.html" id="set-a-btn" class="quiz-btn">
                   <div class="c-btn left-btn choose set-class">
                     SET A
                   </div>
         </a>
-    </a>
+        <!--SET B-->
+             <a href="SET-B.html" id="set-b-btn" class="quiz-btn">
+                  <div class="c-btn left-btn choose set-class">
+                    SET B
+                  </div>
+        </a>
+        </div>
 </div>
     <div class="contact_me">
     <a href="../contact-me/contact_me.html">
@@ -43,7 +50,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     const sets = [
       { id: "set-a-btn", key: "SetACompleted", label: "Set A" },
-     // { id: "set-b-btn", key: "SetBCompleted", label: "Set B" }
+      { id: "set-b-btn", key: "SetBCompleted", label: "Set B" },
+//      {id: "set-c-btn", key: "SetCCompleted", label: "Set C"}
     ];
 
     sets.forEach(set => {

@@ -3,7 +3,7 @@ const Questions = [
     //1
     {
         question: "कुन महादेशमा सबैभन्दा धेरै देशहरू छन्?",
-        options: ["America","एसिया","युरोप","अफ्रिका"],
+        options: ["America","Asia","Europe","Africa"],
         answer: 3
     },
     //2
@@ -33,7 +33,7 @@ const Questions = [
     // History and Culture (5 Questions – 10 Marks)
     //6
     {
-        question: "नेपालको किरण्त युगको सुरुवात कसले गरेका थिए?",
+        question: "नेपालको किराँत युगको सुरुवात कसले गरेका थिए?",
         options: ["झोर्हाङ","लिच्छवी","यलम्बर","पृथ्वीनारायण शाह"],
         answer: 2
     },
@@ -308,4 +308,4 @@ const Questions = [
         options: ["व्यापार","पूँजी बजार","पर्यटन","कृषक संस्था"],
         answer: 1
     }
-]
+];

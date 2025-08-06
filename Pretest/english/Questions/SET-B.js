@@ -34,7 +34,7 @@ const Questions = [
     // History and Culture (5 Questions – 10 Marks)
     //6
     {
-        question: "Who started the Kirant era in Nepal?",
+        question: "Who started the Kirat era in Nepal?",
         options: ["Jhorhang", "Lichchhavi", "Yalambar", "Prithvi Narayan Shah"],
         answer: 2
     },

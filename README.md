@@ -29,29 +29,57 @@ Business Whatapp: +977 9704527011
 
 Quiz Time/
 │
-├── cmat/
+│──assets/
+│ ├──cmat-icon.png
+│ ├──contact_me.png
+│ ├──favicon.png
+│ └──pre-test-icon.png
+│
+│
+├── blogs/
 │ ├── cmat_quiz.html
 │ ├── questions.js
 │ └── script.js
 │
+├── cmat/
+│ ├── cmat/
+│ │  └── blog_set_a.html
+│ ├── pretest/
+│ │  └── blog_set_a_english.html
+│ └── style_blog.css
+│
 ├── contact-me/
+│ ├── about_me.html
 │ ├── contact_me.css
 │ └── contact_me.html
 │
 ├── Pretest/
 │ ├── english/
-│ │ ├── englishquiz.html
-│ │ └── questions.js
+│ │ ├── Questions/
+│ │ │  ├── SET-A.js
+│ │ │  ├── SET-B.js
+│ │ │  ├── SET-C.js
+│ │ │  └── SET-D.js
+│ │ ├── SET_A.html
+│ │ ├── SET-B.html
+│ │ ├── SET-C.html
+│ │ └── SET-D.html
 │ ├── nepali/
-│ │ ├── nepaliquiz.html
-│ │ └── questions.js
-│ ├── pretext.html
-│ └── pretext_set.html
+│ │ ├── Questions/
+│ │ │  ├── SET-A.js
+│ │ │  ├── SET-B.js
+│ │ │  ├── SET-C.js
+│ │ │  └── SET-D.js
+│ │ ├── SET_A.html
+│ │ ├── SET-B.html
+│ │ ├── SET-C.html
+│ │ └── SET-D.html
+│ ├── SET_A.html
+│ ├── SET-B.html
+│ ├── SET-C.html
+│ ├── SET-D.html
+│ └── set.html
 │
-├── resource/
-│ └── contact_me.png
-│
-├── blogs.js
 ├── index.html
 ├──README.md
 ├── script.js

@@ -59,25 +59,35 @@ Quiz Time/
 │ │ │  ├── SET-A.js
 │ │ │  ├── SET-B.js
 │ │ │  ├── SET-C.js
-│ │ │  └── SET-D.js
+│ │ │  ├── SET-D.js
+│ │ │  ├── SET-E.js
+│ │ │  └── SET-F.js
 │ │ ├── SET_A.html
 │ │ ├── SET-B.html
 │ │ ├── SET-C.html
-│ │ └── SET-D.html
+│ │ ├── SET-D.html
+│ │ ├── SET-E.html
+│ │ └── SET-F.html
 │ ├── nepali/
 │ │ ├── Questions/
 │ │ │  ├── SET-A.js
 │ │ │  ├── SET-B.js
 │ │ │  ├── SET-C.js
-│ │ │  └── SET-D.js
+│ │ │  ├── SET-D.js
+│ │ │  ├── SET-E.js
+│ │ │  └── SET-F.js
 │ │ ├── SET_A.html
 │ │ ├── SET-B.html
 │ │ ├── SET-C.html
-│ │ └── SET-D.html
+│ │ ├── SET-D.html
+│ │ ├── SET-E.html
+│ │ └── SET-F.html
 │ ├── SET_A.html
 │ ├── SET-B.html
 │ ├── SET-C.html
 │ ├── SET-D.html
+│ ├── SET-E.html
+│ ├── SET-F.html
 │ └── set.html
 │
 ├── index.html
